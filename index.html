@@ -3,90 +3,185 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me - Ebru Tabakoglu</title>
+  <title>Ebru Tabakoglu</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.8;
       margin: 0;
-      padding: 0;
-      background-color: #f7f7f7;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f8f8f8;
       color: #333;
+      line-height: 1.6;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 50px auto;
-      background: #fff;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    header {
+      background-color: #dfe8e4;
+      padding: 60px 20px;
+      text-align: center;
     }
 
-    h1 {
-      font-size: 38px;
-      margin-bottom: 10px;
-      color: #222;
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+      color: #2f4f4f;
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
     }
 
     h2 {
-      font-size: 24px;
+      text-align: center;
       margin-bottom: 30px;
-      color: #666;
-      font-weight: normal;
+      color: #2f4f4f;
     }
 
-    p {
-      margin-bottom: 25px;
-      text-align: justify;
+    .about,
+    .services,
+    .contact {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      margin-bottom: 30px;
+    }
+
+    .services ul {
+      padding-left: 20px;
+    }
+
+    .services li {
+      margin-bottom: 10px;
+    }
+
+    #certificates {
+      text-align: center;
+    }
+
+    .certificates {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .certificates img {
+      width: 320px;
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease;
+      background: white;
+    }
+
+    .certificates img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #dfe8e4;
+      color: #555;
+      margin-top: 40px;
+    }
+
+    a {
+      color: #2f4f4f;
+      text-decoration: none;
     }
 
     @media (max-width: 768px) {
-      .container {
-        margin: 20px;
-        padding: 25px;
+      header h1 {
+        font-size: 32px;
       }
 
-      h1 {
-        font-size: 30px;
+      header p {
+        font-size: 18px;
+      }
+
+      .certificates img {
+        width: 100%;
       }
     }
   </style>
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>About Ebru</h1>
-    <h2>Experience & Training</h2>
+  <header>
+    <h1>Ebru Tabakoglu</h1>
+    <p>Psychological Counselling & Personal Development</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
 
     <p>
-      Ebru Tabakoglu has been realising individual séances for a long time. Her sphere of activities is focused on adult consultees; mild anxiety cases, life changing specific incidents affected individuals (marriage, divorce, child bearing, career changes, monetary problems, etc.) As a holder of Master of Arts Degree in Applied Psychology, Mrs. Tabakoglu is officially entitled to deal with these cases. Besides, her numerous certificates as well as her other Master of Arts Degree in Educational Sciences also assist her in her services giving them the required academic framework.
+      Welcome. I provide a supportive and confidential space for individuals
+      seeking personal growth, emotional wellbeing, and greater self-awareness.
     </p>
 
     <p>
-      Furthermore, Mrs. Tabakoglu quite deservedly feels comfortable and confident as regards therapy side of her services since she has taken her Gestalt Therapy Training that lasted three years from Assistant Professor Hanna Nita Scherler, an expert respected for her original PhD in Clinical Psychology obtained from Fielding Graduate University in Santa Barbara, USA, as well as her long years of studies concerning Gestalt Therapy studies. Besides, Mrs. Tabakoglu has been fortunate enough to work with Dr. Emel Stroup during her training about Cognitive Therapy Inclination Interview and Therapy Skills which has assisted her extensively in her easy and effective communication with the consultees as regards their problems’ root causes analyses.
+      My approach focuses on understanding each person’s unique experiences,
+      helping clients navigate life challenges, stress, relationships,
+      confidence, and emotional difficulties.
+    </p>
+  </section>
+
+  <section class="services">
+    <h2>Areas of Support</h2>
+
+    <ul>
+      <li>Anxiety and stress management</li>
+      <li>Personal development</li>
+      <li>Relationship difficulties</li>
+      <li>Self-confidence and self-esteem</li>
+      <li>Life transitions</li>
+      <li>Emotional wellbeing</li>
+    </ul>
+  </section>
+
+  <section id="certificates">
+    <h2>Training & Certifications</h2>
+
+    <div class="certificates">
+
+      <a href="images/Media.jpg" target="_blank">
+        <img
+          src="images/Media.jpg"
+          alt="Transactional Analysis 101 Certificate"
+        />
+      </a>
+
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+
+    <p>Email: contact1@ebrutabakoglu.co.uk</p>
+
+    <p>
+      Online sessions available.
     </p>
 
     <p>
-      Ebru has taken her NLP and Milton Model Hypnosis techniques Training directly from Richard Bandler, the founder of NLP as a revolutionising concept of the related professional field, in London. This particular training has endowed Mrs. Tabakoglu not only with the qualification to implement NLP but also the qualification of being NLP trainer, either, both at the international level as well as at the local level.
+      Please get in touch for further information or appointment enquiries.
     </p>
+  </section>
 
-    <p>
-      Ebru attended to two year-scheduled Individual Psycho-Drama Training at Zerka Moreno Institute in Istanbul. Upon this, she has taken Emotional Freedom Technique Training from Gary Craig and she has become eligible as regards delivering EFT and kinesiology implementations and she has accumulated huge expertise per se.
-    </p>
-
-    <p>
-      The other certification and implementation technique Ebru has obtained in London is the much-appreciated Herrmann Holistic Thinking Model Training Certificate. She has obtained this certification by attending a special Herrmann Leadership Camp in London. Hence, Mrs. Tabakoglu is more than capable to provide solutions peculiar to business life as a trained coach in a myriad of areas; career building, problem solution, stress management, etc.
-    </p>
-
-    <p>
-      Ebru has obtained her certificate from Canada as regards “Professional Erickson Coaching Training” thus completed the most important step in becoming an International Professional Coach with ACTP Certification. She believes that this certification will crown her current activities (such as seminaries, workshops, corporate executive coaching, personal development, self-help assistance, coaching trainings, etc.) with an institutional and international designation.
-    </p>
-
-    <p>
-      Last but not least Ebru completed Transactional Analysis TA101 course from Berne Institute in United Kingdom and continues the foundation and advance level courses in the same academy under the facilitation of Adrienne Lee.
-    </p>
-  </div>
+  <footer>
+    © 2026 Ebru Tabakoglu - All Rights Reserved
+  </footer>
 
 </body>
 </html>
