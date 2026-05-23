@@ -1,7 +1,18 @@
-.hero {
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: Georgia, serif;
+    background: #050707;
+    color: #d7d7d7;
+    line-height: 1.7;
+  }
+  
+  /* HERO SECTION */
+  
+  .hero {
     display: grid;
-    grid-template-columns: 240px 1fr 240px;
-    height: 620px;
+    grid-template-columns: 260px 1fr 260px;
+    height: 500px;
     background: radial-gradient(circle at center, #18352f 0%, #102322 100%);
     overflow: hidden;
   }
@@ -22,31 +33,32 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px;
+    padding: 40px;
     text-align: center;
   }
   
   .hero-center h1 {
-    font-size: 88px;
+    font-size: 72px;
     color: #dfe8e4;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     font-weight: 600;
   }
   
   .hero-center p {
-    font-size: 34px;
+    font-size: 26px;
     color: #d8c1a0;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
   
   .instagram-button {
-    padding: 18px 40px;
-    border-radius: 14px;
+    display: inline-block;
+    padding: 14px 30px;
+    border-radius: 12px;
     border: 1px solid rgba(255,255,255,0.25);
     background: rgba(255,255,255,0.05);
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     transition: 0.3s ease;
   }
   
@@ -54,40 +66,56 @@
     background: rgba(255,255,255,0.15);
   }
   
+  /* CONTENT SECTIONS */
+  
+  section {
+    padding: 0;
+    max-width: 100%;
+  }
+  
   .about,
   .services,
   .contact {
     background: #071010;
     color: #d7d7d7;
-    border-radius: 0;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
     padding: 70px;
-    box-shadow: none;
   }
   
   h2 {
     text-align: center;
-    font-size: 52px;
+    font-size: 48px;
     color: #dfe8e4;
     margin-bottom: 45px;
   }
   
-  body {
-    margin: 0;
-    background: #050707;
-    font-family: Georgia, serif;
+  .services ul {
+    padding-left: 20px;
   }
   
-  section {
-    max-width: 100%;
-    padding: 0;
+  .services li {
+    margin-bottom: 10px;
   }
+  
+  /* LINKS */
+  
+  a {
+    color: #d8c1a0;
+    text-decoration: none;
+  }
+  
+  /* FOOTER */
   
   footer {
+    text-align: center;
+    padding: 30px 20px;
     background: #071010;
-    color: #999;
+    color: #888;
+    margin-top: 40px;
   }
+  
+  /* MOBILE */
   
   @media (max-width: 1100px) {
   
@@ -109,6 +137,16 @@
     }
   
     .hero-center p {
-      font-size: 22px;
+      font-size: 20px;
+    }
+  
+    .about,
+    .services,
+    .contact {
+      padding: 40px 25px;
+    }
+  
+    h2 {
+      font-size: 36px;
     }
   }
