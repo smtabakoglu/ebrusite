@@ -11,40 +11,59 @@ body {
   
   .hero {
     position: relative;
+  
     width: 62%;
     height: 430px;
-    margin: 0 auto;
-    background: radial-gradient(circle at center, #1a4038 0%, #102322 65%, #081212 100%);
+  
+    margin: 30px auto 0 auto;
+  
+    background:
+      radial-gradient(circle at center,
+      #1a4038 0%,
+      #102322 65%,
+      #081212 100%);
+  
     display: flex;
     align-items: center;
     justify-content: center;
+  
     border-radius: 0 0 30px 30px;
+  
+    box-shadow:
+      0 0 60px rgba(20, 80, 60, 0.15);
   }
   
   /* FLOATING SIDE PHOTOS */
   
   .hero-side {
     position: absolute;
+  
     top: 35px;
+  
     width: 290px;
-    height: 360px;
+    height: 410px;
+  
     z-index: 2;
   }
   
   .left-banner {
-    left: -180px;
+    left: -200px;
   }
   
   .right-banner {
-    right: -180px;
+    right: -200px;
   }
   
   .hero-side img {
     width: 100%;
     height: 100%;
+  
     object-fit: cover;
+  
     border-radius: 18px;
-    box-shadow: 0 18px 45px rgba(0,0,0,0.45);
+  
+    box-shadow:
+      0 18px 45px rgba(0,0,0,0.45);
   }
   
   /* HERO TEXT */
@@ -55,61 +74,96 @@ body {
   }
   
   .hero-center h1 {
-    font-size: 70px;
+    font-size: 66px;
+  
     color: #e5ece9;
+  
     margin: 0 0 24px 0;
-    text-shadow: 0 4px 14px rgba(0,0,0,0.35);
+  
+    text-shadow:
+      0 4px 14px rgba(0,0,0,0.35);
   }
   
   .hero-center p {
     font-size: 26px;
+  
     color: #d9c3a4;
+  
     margin: 0 0 38px 0;
   }
   
   .instagram-button {
     display: inline-block;
+  
     padding: 14px 32px;
+  
     border-radius: 14px;
+  
     border: 1px solid rgba(255,255,255,0.18);
+  
     background: rgba(255,255,255,0.05);
+  
     color: white;
+  
     text-decoration: none;
+  
+    transition: all 0.3s ease;
   }
   
   .instagram-button:hover {
     background: rgba(255,255,255,0.12);
+  
+    transform: translateY(-2px);
   }
   
   /* CONTENT */
   
   section {
     max-width: 1100px;
+  
     margin: 60px auto 0 auto;
+  
     padding: 70px 50px;
   }
   
   .about,
   .services,
   .contact {
-    background: linear-gradient(to bottom, #051010, #071515);
+  
+    background:
+      linear-gradient(to bottom,
+      #051010,
+      #071515);
+  
     border-radius: 24px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  
+    box-shadow:
+      0 10px 30px rgba(0,0,0,0.3);
   }
+  
+  /* TITLES */
   
   h2 {
     text-align: center;
+  
     font-size: 52px;
+  
     color: #e4ebe8;
+  
     margin-bottom: 45px;
   }
+  
+  /* TEXT */
   
   .about p,
   .services li,
   .contact p {
     font-size: 19px;
+  
     color: #d5d5d5;
   }
+  
+  /* SERVICES */
   
   .services ul {
     padding-left: 25px;
@@ -119,30 +173,46 @@ body {
     margin-bottom: 12px;
   }
   
+  /* LINKS */
+  
   a {
     color: #d8c1a0;
     text-decoration: none;
   }
   
+  /* FOOTER */
+  
   footer {
     text-align: center;
+  
     padding: 35px;
+  
     background: #071010;
+  
     color: #888;
+  
     margin-top: 50px;
   }
   
   /* MOBILE */
   
   @media (max-width: 1200px) {
+  
     .hero {
       width: 100%;
       height: auto;
+  
       min-height: 360px;
+  
+      border-radius: 0;
     }
   
     .hero-side {
       display: none;
+    }
+  
+    .hero-center {
+      padding: 60px 30px;
     }
   
     .hero-center h1 {
@@ -155,6 +225,7 @@ body {
   
     section {
       margin-top: 30px;
+  
       padding: 45px 25px;
     }
   
